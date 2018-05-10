@@ -1,0 +1,26 @@
+{
+    "name"         : "node-red-auth-azuread",
+    "version"      : "0.1.0",
+    "description"  : "An AzureAD authentication plugin for Node-RED",
+    "homepage"     : "http://nodered.org",
+    "license"      : "Apache-2.0",
+    "repository"   : {
+        "type":"git",
+        "url":""
+    },
+    "main": "./lib/index.js",
+    "author": [
+        {"name": "Andrew Baccus", "email": "andrew.baccus@eafarms.com"}
+    ],
+    "keywords": [
+        "node-red",
+        "azure",
+        "adal",
+        "node-red-auth",
+        "authentication",
+        "auth"
+    ],
+    "dependencies": {
+        "passport-azure-ad": "latest"
+    }
+}
