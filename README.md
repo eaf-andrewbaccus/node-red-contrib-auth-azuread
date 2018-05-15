@@ -27,7 +27,7 @@ Once created, you will be provided a _Identity Metadata_ and _Client ID_ that yo
 ### Configure `adminAuth`
 
 Access control for the Node-RED editor is configured in your `settings.js` file
-using the `adminAuth` property. Receives options as listed in the Passport-Azure-AD project. 
+using the `adminAuth` property. Receives options as listed in the [passport-azure-AD](https://github.com/AzureAD/passport-azure-ad) project. 
 `identityMetadata`, `clientID`, `responseType`, `responseMode`, and `redirectUrl` are required; 
 `scope` defaults to `['profile']` if none is provided. Also receives a custom "verify" function if desired; 
 otherwise uses a default that looks for "Preferred Username". Example:
@@ -42,6 +42,9 @@ otherwise uses a default that looks for "Preferred Username". Example:
             {username: "test@admin.com",permissions: ["*"]}
         ]
     })
+
+Note: currently, the node-red `auth/strategy/callback` method only accepts GET requests, so this will fail unless you use the response mode `query`.
+As listed in the [passport-azure-AD](https://github.com/AzureAD/passport-azure-ad) project, this will change requirements for some other options. Please read their github for more info.
 
 ## Copyright and license
 
