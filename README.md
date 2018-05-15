@@ -43,7 +43,7 @@ otherwise uses a default that looks for "Preferred Username". Example:
         ]
     })
 
-Note: at time of this writing, the node-red `auth/strategy/callback` method only accepts GET requests, so this will fail unless you use the response mode `query`.
+**Note:** at time of this writing, the node-red `auth/strategy/callback` method only accepts GET requests, so this will fail unless you use the response mode `query`.
 As listed in the [passport-azure-AD](https://github.com/AzureAD/passport-azure-ad) project, this will change requirements for some other options. Please read their github for more info.
 
 ## Copyright and license
