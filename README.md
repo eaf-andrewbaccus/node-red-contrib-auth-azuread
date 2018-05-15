@@ -20,7 +20,7 @@ In your Node-RED user directory, typically `~/.node-red`:
 
 Guide to Microsoft AzureAD application registration [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications).
 
-To enable access control with AzureAD, you must first [create a new applicationon your Azure Portal](https://portal.azure.com).
+To enable access control with AzureAD, you must first [create a new application on your Azure Portal](https://portal.azure.com).
 
 Once created, you will be provided a _Identity Metadata_ and _Client ID_ that you will need to use to configure the authentication plugin.
 
