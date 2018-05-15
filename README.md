@@ -33,11 +33,11 @@ using the `adminAuth` property. Receives options as listed in the [passport-azur
 otherwise uses a default that looks for "Preferred Username". Example:
 
     adminAuth:require("node-red-contrib-auth-azuread")({
-        identityMetadata,
-        clientID,
-        responseType,
-        responseMode,
-        redirectUrl,
+        identityMetadata: 'https://login.microsoftonline.com/<tenant guid>/v2.0/.well-known/openid-configuration',
+        clientID: '<application ID>',
+        responseType: 'code',
+        responseMode: 'query',
+        redirectUrl: 'https://<node red endpoint>/auth/strategy/callback',
         users: [
             {username: "test@admin.com",permissions: ["*"]}
         ]
