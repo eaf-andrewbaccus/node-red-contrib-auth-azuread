@@ -1,5 +1,5 @@
 {
-    "name"         : "node-red-auth-azuread",
+    "name"         : "node-red-contrib-auth-azuread",
     "version"      : "0.1.0",
     "description"  : "An AzureAD authentication plugin for Node-RED",
     "homepage"     : "http://nodered.org",
