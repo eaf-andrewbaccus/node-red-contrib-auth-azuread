@@ -6,7 +6,7 @@
     "license"      : "Apache-2.0",
     "repository"   : {
         "type":"git",
-        "url":""
+        "url":"https://github.com/eaf-andrewbaccus/node-red-contrib-auth-azuread"
     },
     "main": "./lib/index.js",
     "author": [
